@@ -55,6 +55,10 @@ body {
   color: #595959;
 }
 
+.pagination nav {
+  margin: auto;
+}
+
 .page-item.active .page-link {
     background-color: #ff9966;
     border-color: transparent;
