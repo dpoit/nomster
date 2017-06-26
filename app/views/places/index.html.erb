@@ -8,6 +8,14 @@
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
 
+    <% place.photos.each do |photo| %>
+      <div class='photo-column'>
+        <%= image_tag photo.picture, class: 'photo' %>
+      </div>
+    <% end %>
+
+    <br class="clear" /><br />
+
     <% if place.user.present? %>
       <small>Added by <%= place.user.email %></small>
     <% end %>
@@ -26,7 +34,6 @@
     <% end %>
   </div>
 <% end %>
-
 
 <br />
 

@@ -26,33 +26,38 @@
     </script>
 
     <div id="map"></div>
-
-    <div>
-      <% @place.photos.each do |photo| %>
-        <%= image_tag photo.picture %>
-        <%= photo.caption %>
-      <% end %>
-    </div>
   <% end %>
 
   <br />
 
-  <% if @place.user.present? %>
-    <small>Added by <%= @place.user.email %></small>
+  <% @place.photos.each do |photo| %>
+    <div class='photo-column'>
+      <%= image_tag photo.picture, class: 'photo' %>
+      <br />
+      <small><%= photo.caption %></small>
+    </div>
   <% end %>
-  <div class="float-right">
-    <% if current_user && current_user == @place.user %>
-      <!-- Button trigger modal for uploading a photo -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uploadPhoto">
-        Upload a photo
-      </button>
-      <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
-      <%= link_to 'Delete', place_path(@place), method: :delete, data:
-      {confirm: 'Are you sure you want to delete this place?'}, class:
-      'btn btn-danger' %>
+
+  <br class="clear"/><br />
+
+  <div>
+    <% if @place.user.present? %>
+      <small>Added by <%= @place.user.email %></small>
     <% end %>
+    <div class="float-right">
+      <% if current_user && current_user == @place.user %>
+        <!-- Button trigger modal for uploading a photo -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uploadPhoto">
+          Upload a photo
+        </button>
+        <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
+        <%= link_to 'Delete', place_path(@place), method: :delete, data:
+        {confirm: 'Are you sure you want to delete this place?'}, class:
+        'btn btn-danger' %>
+      <% end %>
+    </div>
+    <br class="clear">
   </div>
-  <br class="clear">
 </div>
 
 <!-- Modal for adding a comment -->
@@ -92,12 +97,10 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
+      <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
         <div class="modal-body">
-          <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
             <%= f.input :picture %>
             <%= f.input :caption %>
-          <% end %>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary"
