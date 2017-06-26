@@ -8,10 +8,8 @@
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
 
-    <% place.photos.each do |photo| %>
-      <div class='photo-column'>
-        <%= image_tag photo.picture, class: 'photo' %>
-      </div>
+    <% if place.photos.present? %>
+      <%= image_tag place.photos.last.picture, class: 'photo-index' %>
     <% end %>
 
     <br class="clear" /><br />
