@@ -127,6 +127,11 @@ blockquote p {
   display: inline;
 }
 
+blockquote:after {
+  content: close-quote;
+  visibility:hidden; 
+}
+
 .photo-column {
   text-align: center;
   float: left;
