@@ -47,7 +47,8 @@
     <div class="float-right">
       <% if current_user && current_user == @place.user %>
         <!-- Button trigger modal for uploading a photo -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uploadPhoto">
+        <button type="button" class="btn btn-primary" data-toggle="modal"
+        data-target="#uploadPhoto">
           Upload a photo
         </button>
         <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
@@ -61,7 +62,8 @@
 </div>
 
 <!-- Modal for adding a comment -->
-<div class="modal fade" id="addComment" tabindex="-1" role="dialog" aria-labelledby="addCommentLabel" aria-hidden="true">
+<div class="modal fade" id="addComment" tabindex="-1" role="dialog"
+aria-labelledby="addCommentLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -87,7 +89,8 @@
 </div>
 
 <!-- Modal for uploading a photo -->
-<div class="modal fade" id="uploadPhoto" tabindex="-1" role="dialog" aria-labelledby="uploadPhotoLabel" aria-hidden="true">
+<div class="modal fade" id="uploadPhoto" tabindex="-1" role="dialog"
+aria-labelledby="uploadPhotoLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -115,7 +118,8 @@
 <div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
   <!-- Button trigger modal for adding a comment -->
-  <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#addComment">
+  <button type="button" class="btn btn-primary float-right" data-toggle="modal"
+  data-target="#addComment">
     Add a comment
   </button>
 </div>
