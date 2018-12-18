@@ -68,6 +68,7 @@ gem 'font-awesome-rails'
 
 gem 'devise'
 
+# Complete Ruby geocoding solution
 gem 'geocoder'
 
 gem 'figaro'
