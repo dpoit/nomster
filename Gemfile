@@ -71,6 +71,7 @@ gem 'devise'
 # Complete Ruby geocoding solution
 gem 'geocoder'
 
+# Use figaro to store API keys in environment variables
 gem 'figaro'
 
 gem 'carrierwave', '~> 1.0'
