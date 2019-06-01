@@ -46,6 +46,19 @@ Whenever a comment is added to a place, the user who originally added the place 
 
 <img src="https://i.imgur.com/LgVXLYE.png" alt="Comment notification email" width="500"/>
 
+## Tech used
+
+* [Rails](https://rubyonrails.org/) (5.0.7.2)
+* [Bootstrap](https://getbootstrap.com/) (4.3.1)
+* [Kaminari](https://github.com/kaminari/kaminari) (1.1.1)
+* [simple_form](https://github.com/plataformatec/simple_form) (4.1.0)
+* [Font Awesome](https://fontawesome.com) (4.7.0.4)
+* [Devise](https://github.com/plataformatec/devise) (4.6.2)
+* [Google Maps API](https://developers.google.com/maps/documentation/)/[Geocoder](http://www.rubygeocoder.com/) (1.5.1)
+* [Figaro](https://github.com/laserlemon/figaro) (1.1.1)
+* [CarrierWave](https://github.com/carrierwaveuploader/carrierwave) (1.3.1)
+* [AWS](https://aws.amazon.com/)/[fog-aws](https://github.com/fog/fog-aws) (3.4.0)
+
 ## Authors
 
 * **[Danny Poit](https://github.com/dpoit)**
