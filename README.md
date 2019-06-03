@@ -4,7 +4,7 @@ A Yelp clone that integrates with the Google Maps API and includes features like
 
 ## URL
 
-[https://nomster-danny-poit.herokuapp.com/](https://nomster-danny-poit.herokuapp.com/)
+[http://nomster.dannypoit.com/](http://nomster.dannypoit.com/)
 
 ## Users
 
