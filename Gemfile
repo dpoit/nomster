@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '= 5.0.7.2'
 # Use postgresql as the database for Active Record
@@ -52,20 +51,27 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Use popper_js as part of the Bootstrap installation process
 gem 'popper_js', '~> 1.14.5'
 
+# Use Bootstrap for design elements to build a modern, attractive web application
 gem 'bootstrap', '~> 4.3.1'
 
+# Use tether as part of the Bootstrap installation process
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 
+# Use kaminari for pagination
 gem 'kaminari'
 
+# Use simple_form for easier forms
 gem 'simple_form'
 
+# Use Font Awesome for icons
 gem 'font-awesome-rails'
 
+# Use Devise for user management
 gem 'devise'
 
 # Complete Ruby geocoding solution
@@ -74,6 +80,8 @@ gem 'geocoder'
 # Use figaro to store API keys in environment variables
 gem 'figaro'
 
+# Use CarrierWave for uploading images
 gem 'carrierwave', '~> 1.0'
 
+# Use fog-aws to connect to Amazon Web Services
 gem 'fog-aws'
