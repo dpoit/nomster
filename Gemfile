@@ -81,7 +81,7 @@ gem 'geocoder'
 gem 'figaro'
 
 # Use CarrierWave for uploading images
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 # Use fog-aws to connect to Amazon Web Services
 gem 'fog-aws'
